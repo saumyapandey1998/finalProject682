@@ -2,8 +2,6 @@
 
 An explainable deep learning framework for pneumonia detection and subtype classification from chest X-ray images using DINOv3 Vision Transformers and attention-based localization. The framework combines transformer-based feature extraction, medical attention localization, and threshold optimization to improve both classification performance and interpretability in AI-assisted healthcare diagnosis systems.
 
----
-
 ## Project Overview
 
 This project introduces a two-stage explainable medical image classification pipeline for chest X-ray analysis.
@@ -18,8 +16,6 @@ The framework performs:
 
 The model uses a DINOv3 Vision Transformer backbone combined with a Medical Attention Localization Module to generate clinically meaningful attention maps while improving classification accuracy.
 
----
-
 ## Key Features
 
 - DINOv3 Vision Transformer backbone
@@ -33,13 +29,9 @@ The model uses a DINOv3 Vision Transformer backbone combined with a Medical Atte
 - Three-class pneumonia evaluation
 - Confusion matrix and metric analysis
 
----
-
 ## Motivation
 
 Pneumonia is one of the most common respiratory diseases and delayed diagnosis can significantly increase clinical risk. Traditional CNN-based systems often behave like black boxes and lack interpretability. This project focuses on building a transparent and explainable AI system that not only performs accurate classification but also highlights clinically relevant lung regions responsible for predictions.
-
----
 
 ## Architecture
 
@@ -57,8 +49,6 @@ A trainable attention mechanism learns clinically relevant spatial regions direc
 
 Threshold tuning is introduced during Stage 1 classification to reduce false negatives and improve recall performance for pneumonia detection.
 
----
-
 ## Dataset
 
 Dataset used:
@@ -71,8 +61,6 @@ Classes:
 - BACTERIAL PNEUMONIA
 - VIRAL PNEUMONIA
 
----
-
 ## Training Configuration
 
 | Parameter | Value |
@@ -83,8 +71,6 @@ Classes:
 | Image Size | 224 × 224 |
 | Loss Function | Cross Entropy |
 | Epochs | 25 |
-
----
 
 ## Data Augmentation
 
@@ -98,8 +84,6 @@ The following augmentations were applied during training:
 
 These augmentations improved generalization and reduced overfitting.
 
----
-
 ## Final Results
 
 ### Proposed DINOv3 Framework
@@ -112,8 +96,6 @@ These augmentations improved generalization and reduced overfitting.
 | Recall | 86.04% |
 | Weighted F1-score | 86.23% |
 
----
-
 ## Comparison with ResNet50 Baseline
 
 | Model | Accuracy | Precision | Recall | F1-score |
@@ -122,8 +104,6 @@ These augmentations improved generalization and reduced overfitting.
 | DINOv3 + Localization | 86.04 | 88.02 | 86.04 | 86.23 |
 
 The proposed transformer-based framework significantly outperformed the CNN baseline across all evaluation metrics.
-
----
 
 ## Explainability
 
@@ -136,8 +116,6 @@ The generated attention maps:
 - Improve clinical transparency
 - Produce anatomically meaningful visual explanations
 
----
-
 ## Technologies Used
 
 - Python
@@ -149,29 +127,6 @@ The generated attention maps:
 - Matplotlib
 - Scikit-learn
 - Google Colab
-
----
-
-## Project Structure
-
-```text
-project/
-│
-├── dataset/
-├── models/
-├── notebooks/
-├── outputs/
-│   ├── confusion_matrices/
-│   ├── attention_maps/
-│   └── predictions/
-├── train.py
-├── inference.py
-├── utils.py
-├── requirements.txt
-└── README.md
-```
-
----
 
 ## Running the Project
 
@@ -210,8 +165,6 @@ python inference.py
 - Classification reports
 - Threshold analysis plots
 
----
-
 ## Future Work
 
 Future improvements include:
@@ -222,8 +175,6 @@ Future improvements include:
 - Advanced explainability techniques
 - Attention-guided diagnostic reasoning
 
----
-
 ## Authors
 
 - Shivangi Mittal
@@ -231,8 +182,6 @@ Future improvements include:
 - Tasmiya Fathima
 
 UMass Amherst
-
----
 
 ## References
 
